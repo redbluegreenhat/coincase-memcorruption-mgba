@@ -89,9 +89,6 @@ function static_analysis(c, depth)
     if vbaonly>0 then
         halttext=halttext.."\nVBA ONLY"
     end
-    if color == '#ff0000' and halted > 0 then
-        --vba.pause()
-    end
     return {out="writes   : " .. writes .. "\njumps    : " .. jumps .. "\nchanges  : " .. changes .. halttext}
 end
 
